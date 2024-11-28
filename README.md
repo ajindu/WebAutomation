@@ -39,7 +39,7 @@ WebDriverManager digunakan untuk mengelola driver browser secara otomatis dengan
 
 Screenshot hasil pengujian tes positif dan negatif :
 -
-Tes positif : Menguji fungsionalotas login dengan normal user, menambahkan , dan menghapus item dari keranjang
+Tes positif : Menguji fungsionalitas login dengan normal user, menambahkan , dan menghapus item dari keranjang
 ![Screenshot 2024-11-28 091459](https://github.com/user-attachments/assets/8088c5dd-5eee-437f-a28f-a7b3aca01bf7)
 ![Screenshot 2024-11-28 091517](https://github.com/user-attachments/assets/8ace34b0-560a-4ad9-8ed6-5494c4a5cde0)
 ![Screenshot 2024-11-28 091534](https://github.com/user-attachments/assets/a8950d4f-be80-473c-a0c2-affa4adf61f6)
