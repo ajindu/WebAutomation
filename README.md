@@ -19,7 +19,8 @@ Tes Negatif
 Konfigurasi project :
 -
 1. Struktur Direktori Proyek :
-      src/test/java/ :
+
+    src/test/java/ :
   - pages/ : Berisi kelas WebPage, berfungsi untuk melakukan aksi pada elemen-elemen halaman web.
   - stepDef/ : Berisi kelas WebStep, berfungsi sebagai step definitions untuk Cucumber.
   - helper/ : Berisi kelas Utility yang mengelola konfigurasi WebDriver.
