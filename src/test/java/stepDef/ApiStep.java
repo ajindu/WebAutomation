@@ -63,4 +63,9 @@ public class ApiStep {
     public void validationResponseBodyUpdateUser() {
         apiPage.validationResponseBodyUpdateUser();
     }
+
+    @And("hit api post create new user with invalid gender")
+    public void hitApiPostCreateNewUserWithInvalidGender() {
+        apiPage.hitApiPostCreateUserAbnormal();
+    }
 }

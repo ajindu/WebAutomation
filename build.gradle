@@ -21,6 +21,8 @@ dependencies {
     testImplementation group: 'io.rest-assured', name: 'json-path', version: '5.3.0'
     implementation group: 'io.rest-assured', name: 'json-schema-validator', version: '5.3.0'
     testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.24.0'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.10.0'
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.4.1'
 }
 
 test {
@@ -50,7 +52,7 @@ tasks.register('apiTest'){
     }
 }
 
-tasks.register('apiTest2') {
+tasks.register('webTest') {
     dependsOn assemble, testClasses
     doLast {
         javaexec {
@@ -60,7 +62,23 @@ tasks.register('apiTest2') {
                     '--plugin', 'pretty',
                     '--plugin', 'html:reports/cucumber-api-report.html',
                     '--glue', 'stepDef',
-                    '--tags', "@api",
+                    '--tags', "@web",
+                    'src/test/java/features']
+        }
+    }
+
+}
+tasks.register('webTestNegative') {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin', 'pretty',
+                    '--plugin', 'html:reports/cucumber-api-report.html',
+                    '--glue', 'stepDef',
+                    '--tags', "@webNegative",
                     'src/test/java/features']
         }
     }

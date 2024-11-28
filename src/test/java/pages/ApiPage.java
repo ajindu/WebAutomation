@@ -67,6 +67,10 @@ public class ApiPage {
         res = postCreateUser(setUrl);
         System.out.println(res.getBody().asString());
     }
+    public void hitApiPostCreateUserAbnormal(){
+        res = postCreateUserAbnormal(setUrl);
+        System.out.println(res.getBody().asString());
+    }
 
     public void validationResponseBodyCreateUser(){
         JsonPath jsonPathEvaluator = res.jsonPath();
@@ -108,4 +112,5 @@ public class ApiPage {
         assertThat(status).isIn("active", "inactive");
 
     }
+
 }

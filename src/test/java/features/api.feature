@@ -36,6 +36,14 @@ Feature: Test Automation Rest API
     Then validation response body update user
 
 
+  @negative
+  Scenario: Test create user with invalid gender
+    Given prepare url for "CREATE_NEW_USERS"
+    And hit api post create new user with invalid gender
+    Then validation status code is equals 422
+
+
+
 
 
 
