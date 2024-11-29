@@ -49,6 +49,10 @@ Tes negatif : Menguji fungsionalitas login dengan locked user
 ![Screenshot 2024-11-28 091650](https://github.com/user-attachments/assets/2cce756f-eace-4200-b2e3-00d411d1f3ca)
 ![Screenshot 2024-11-28 091701](https://github.com/user-attachments/assets/0c5bd568-59e0-4d78-82db-bfdf9942698b)
 
+GitHub Actions Workflow
+![Screenshot 2024-11-29 084052](https://github.com/user-attachments/assets/5acec1e7-672c-40eb-a990-ab8d6188c8f0)
+
+
 
 
 
